@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Generics | Store</title>
+        <meta name="description" content="This is the description">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css" />
+        <script src="store.js" async></script>
+    </head>
+    <body>
+        <section class="container content-section">
+            <h2 class="section-header">天麗生技</h2>
+
+            <div class="cart-row">
+                <strong class="cart-item cart-header cart-column">產品名稱</strong>
+                <strong class="cart-price cart-header cart-column">價格</strong>
+                <strong class="cart-price2 cart-header cart-column">PV 值</strong>
+            </div>
+
+            <!--J017-->
+            <div class="bb">
+                <div class="cart-items">
+                    <div class="cart-row2">
+                        <div class="cart-item cart-column">
+                            <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                            <span class="cart-item-title">A1 深層潔膚油</span>
+                        </div>
+                    
+                        <span class="cart-price cart-column">$1995</span>
+                        <span class="cart-price2 cart-column">1700</span>
+                    </div>
+                </div>
+
+            
+                <div class="cart-items">
+                    <div class="cart-row">
+                        <div class="cart-quantity cart-column">
+                            <button id="a-minus" class="btn btn-danger2" type="button">-</button> 
+                            <input id="a-number" type="text" min="0" class="cart-quantity-input" value="0" readonly>
+                            <button id="a-plus" class="btn btn-danger" type="button">+</button>    
+                        </div>
+                    
+                        <span id="a-total" class="cart-price cart-column">$0</span>
+                        <span id="a-pv" class="cart-price2 cart-column">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--J001-->
+            <div class="cart-items">
+                <div class="cart-row2">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                        <span class="cart-item-title">01 雙效潔顏露</span>
+                    </div>
+                    
+                    <span class="cart-price cart-column">$1995</span>
+                    <span class="cart-price2 cart-column">1700</span>
+                </div>
+            </div>
+
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-quantity cart-column">
+                        <button id="b-minus" class="btn btn-danger2" type="button">-</button> 
+                        <input id="b-number" type="text" min="0" class="cart-quantity-input" value="0" readonly>
+                        <button id="b-plus" class="btn btn-danger" type="button">+</button>    
+                    </div>
+                
+                    <span id="b-total" class="cart-price cart-column">$0</span>
+                    <span id="b-pv" class="cart-price2 cart-column">0</span>
+                </div>
+            </div>
+
+            <!--J002-->
+            <div class="bb">
+                <div class="cart-items">
+                    <div class="cart-row2">
+                        <div class="cart-item cart-column">
+                            <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                            <span class="cart-item-title">02 平衡柔膚露</span>
+                        </div>
+                    
+                        <span class="cart-price cart-column">$1995</span>
+                        <span class="cart-price2 cart-column">1700</span>
+                    </div>
+                </div>
+
+            
+                <div class="cart-items">
+                    <div class="cart-row">
+                        <div class="cart-quantity cart-column">
+                            <button id="c-minus" class="btn btn-danger2" type="button">-</button> 
+                            <input id="c-number" type="text" min="0" class="cart-quantity-input" value="0" readonly>
+                            <button id="c-plus" class="btn btn-danger" type="button">+</button>    
+                        </div>
+                    
+                        <span id="c-total" class="cart-price cart-column">$0</span>
+                        <span id="c-pv" class="cart-price2 cart-column">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--J003-->
+            <div class="cart-items">
+                <div class="cart-row2">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                        <span class="cart-item-title">03 全效緊緻眼霜</span>
+                    </div>
+                    
+                    <span class="cart-price cart-column">$3990</span>
+                    <span class="cart-price2 cart-column">3500</span>
+                </div>
+            </div>
+            
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-quantity cart-column">
+                        <button id="d-minus" class="btn btn-danger2" type="button">-</button> 
+                        <input id="d-number" type="text" min="0" class="cart-quantity-input" value="0" readonly>
+                        <button id="d-plus" class="btn btn-danger" type="button">+</button>    
+                    </div>
+                
+                    <span id="d-total" class="cart-price cart-column">$0</span>
+                    <span id="d-pv" class="cart-price2 cart-column">0</span>
+                </div>
+            </div>
+
+            <!--J004-->
+            <div class="bb">
+                <div class="cart-items">
+                    <div class="cart-row2">
+                        <div class="cart-item cart-column">
+                            <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                            <span class="cart-item-title">04 煥白晶華霜</span>
+                        </div>
+                    
+                        <span class="cart-price cart-column">$4200</span>
+                        <span class="cart-price2 cart-column">3600</span>
+                    </div>
+                </div>
+
+            
+                <div class="cart-items">
+                    <div class="cart-row">
+                        <div class="cart-quantity cart-column">
+                            <button id="e-minus" class="btn btn-danger2" type="button">-</button> 
+                            <input id="e-number" type="text" min="0" class="cart-quantity-input" value="0" readonly>
+                            <button id="e-plus" class="btn btn-danger" type="button">+</button>    
+                        </div>
+                    
+                        <span id="e-total" class="cart-price cart-column">$0</span>
+                        <span id="e-pv" class="cart-price2 cart-column">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--J005-->
+            <div class="cart-items">
+                <div class="cart-row2">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                        <span class="cart-item-title">05 均衡調理霜</span>
+                    </div>
+                    
+                    <span class="cart-price cart-column">$4200</span>
+                    <span class="cart-price2 cart-column">3600</span>
+                </div>
+            </div>
+            
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-quantity cart-column">
+                        <button id="f-minus" class="btn btn-danger2" type="button">-</button> 
+                        <input id="f-number" type="text" min="0" class="cart-quantity-input" value="0" readonly>
+                        <button id="f-plus" class="btn btn-danger" type="button">+</button>    
+                    </div>
+                
+                    <span id="f-total" class="cart-price cart-column">$0</span>
+                    <span id="f-pv" class="cart-price2 cart-column">0</span>
+                </div>
+            </div>
+
+            <!--J006-->
+            <div class="bb">
+                <div class="cart-items">
+                    <div class="cart-row2">
+                        <div class="cart-item cart-column">
+                            <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                            <span class="cart-item-title">6A 亮白防護霜</span>
+                        </div>
+                    
+                        <span class="cart-price cart-column">$3990</span>
+                        <span class="cart-price2 cart-column">3500</span>
+                    </div>
+                </div>
+
+            
+                <div class="cart-items">
+                    <div class="cart-row">
+                        <div class="cart-quantity cart-column">
+                            <button id="g-minus" class="btn btn-danger2" type="button">-</button> 
+                            <input id="g-number" type="text" min="0" class="cart-quantity-input" value="0" readonly>
+                            <button id="g-plus" class="btn btn-danger" type="button">+</button>    
+                        </div>
+                    
+                        <span id="g-total" class="cart-price cart-column">$0</span>
+                        <span id="g-pv" class="cart-price2 cart-column">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--J006-1-->
+            <div class="cart-items">
+                <div class="cart-row2">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                        <span class="cart-item-title">6B 潤白防護霜</span>
+                    </div>
+                    
+                    <span class="cart-price cart-column">$3990</span>
+                    <span class="cart-price2 cart-column">3500</span>
+                </div>
+            </div>
+
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-quantity cart-column">
+                        <button id="h-minus" class="btn btn-danger2" type="button">-</button> 
+                        <input id="h-number" type="text" min="0" class="cart-quantity-input" value="0" readonly>
+                        <button id="h-plus" class="btn btn-danger" type="button">+</button>    
+                    </div>
+                
+                    <span id="h-total" class="cart-price cart-column">$0</span>
+                    <span id="h-pv" class="cart-price2 cart-column">0</span>
+                </div>
+            </div>
+
+            <!--J008-->
+            <div class="bb">
+                <div class="cart-items">
+                    <div class="cart-row2">
+                        <div class="cart-item cart-column">
+                            <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                            <span class="cart-item-title">08 賦活菁華霜</span>
+                        </div>
+                    
+                        <span class="cart-price cart-column">$3990</span>
+                        <span class="cart-price2 cart-column">3500</span>
+                    </div>
+                </div>
+
+            
+                <div class="cart-items">
+                    <div class="cart-row">
+                        <div class="cart-quantity cart-column">
+                            <button id="i-minus" class="btn btn-danger2" type="button">-</button> 
+                            <input id="i-number" type="text" min="0" class="cart-quantity-input" value="0" readonly>
+                            <button id="i-plus" class="btn btn-danger" type="button">+</button>    
+                        </div>
+                    
+                        <span id="i-total" class="cart-price cart-column">$0</span>
+                        <span id="i-pv" class="cart-price2 cart-column">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--J009-->
+            <div class="cart-items">
+                <div class="cart-row2">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                        <span class="cart-item-title">09 保濕修護霜</span>
+                    </div>
+                    
+                    <span class="cart-price cart-column">$2415</span>
+                    <span class="cart-price2 cart-column">1800</span>
+                </div>
+            </div>
+            
+
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-quantity cart-column">
+                        <button id="j-minus" class="btn btn-danger2" type="button">-</button> 
+                        <input id="j-number" type="text" min="0" class="cart-quantity-input" value="0" readonly>
+                        <button id="j-plus" class="btn btn-danger" type="button">+</button>    
+                    </div>
+                
+                    <span id="j-total" class="cart-price cart-column">$0</span>
+                    <span id="j-pv" class="cart-price2 cart-column">0</span>
+                </div>
+            </div>
+
+            <!--J010-->
+            <div class="bb">
+                <div class="cart-items">
+                    <div class="cart-row2">
+                        <div class="cart-item cart-column">
+                            <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                            <span class="cart-item-title">10 瞬效亮麗精純液</span>
+                        </div>
+                    
+                        <span class="cart-price cart-column">$3465</span>
+                        <span class="cart-price2 cart-column">3000</span>
+                    </div>
+                </div>
+
+            
+                <div class="cart-items">
+                    <div class="cart-row">
+                        <div class="cart-quantity cart-column">
+                            <button id="k-minus" class="btn btn-danger2" type="button">-</button> 
+                            <input id="k-number" type="text" min="0" class="cart-quantity-input" value="0" readonly>
+                            <button id="k-plus" class="btn btn-danger" type="button">+</button>    
+                        </div>
+                    
+                        <span id="k-total" class="cart-price cart-column">$0</span>
+                        <span id="k-pv" class="cart-price2 cart-column">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--J019-->
+            <div class="cart-items">
+                <div class="cart-row2">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                        <span class="cart-item-title">12 煥彩青春露</span>
+                    </div>
+                    
+                    <span class="cart-price cart-column">$2415</span>
+                    <span class="cart-price2 cart-column">1800</span>
+                </div>
+            </div>
+            
+
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-quantity cart-column">
+                        <button id="l-minus" class="btn btn-danger2" type="button">-</button> 
+                        <input id="l-number" type="text" min="0" class="cart-quantity-input" value="0" readonly>
+                        <button id="l-plus" class="btn btn-danger" type="button">+</button>    
+                    </div>
+                
+                    <span id="l-total" class="cart-price cart-column">$0</span>
+                    <span id="l-pv" class="cart-price2 cart-column">0</span>
+                </div>
+            </div>
+
+            <!--J011-->
+            <div class="bb">
+                <div class="cart-items">
+                    <div class="cart-row2">
+                        <div class="cart-item cart-column">
+                            <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                            <span class="cart-item-title">Bio 雪肌面膜</span>
+                        </div>
+                    
+                        <span class="cart-price cart-column">$2415</span>
+                        <span class="cart-price2 cart-column">1800</span>
+                    </div>
+                </div>
+
+            
+                <div class="cart-items">
+                    <div class="cart-row">
+                        <div class="cart-quantity cart-column">
+                            <button id="m-minus" class="btn btn-danger2" type="button">-</button> 
+                            <input id="m-number" type="text" min="0" class="cart-quantity-input" value="0" readonly>
+                            <button id="m-plus" class="btn btn-danger" type="button">+</button>    
+                        </div>
+                    
+                        <span id="m-total" class="cart-price cart-column">$0</span>
+                        <span id="m-pv" class="cart-price2 cart-column">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--J012-->
+            <div class="cart-items">
+                <div class="cart-row2">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                        <span class="cart-item-title">嫩白C粉 10g</span>
+                    </div>
+                    
+                    <span class="cart-price cart-column">$3465</span>
+                    <span class="cart-price2 cart-column">3000</span>
+                </div>
+            </div>
+            
+
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-quantity cart-column">
+                        <button id="n-minus" class="btn btn-danger2" type="button">-</button> 
+                        <input id="n-number" type="text" min="0" class="cart-quantity-input" value="0" readonly>
+                        <button id="n-plus" class="btn btn-danger" type="button">+</button>    
+                    </div>
+                
+                    <span id="n-total" class="cart-price cart-column">$0</span>
+                    <span id="n-pv" class="cart-price2 cart-column">0</span>
+                </div>
+            </div>
+
+            <!--J012-1-->
+            <div class="bb">
+                <div class="cart-items">
+                    <div class="cart-row2">
+                        <div class="cart-item cart-column">
+                            <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                            <span class="cart-item-title">嫩白C粉 100g</span>
+                        </div>
+                    
+                        <span class="cart-price cart-column">$29400</span>
+                        <span class="cart-price2 cart-column">26000</span>
+                    </div>
+                </div>
+
+            
+                <div class="cart-items">
+                    <div class="cart-row">
+                        <div class="cart-quantity cart-column">
+                            <button id="o-minus" class="btn btn-danger2" type="button">-</button> 
+                            <input id="o-number" type="text" min="0" class="cart-quantity-input" value="0" readonly>
+                            <button id="o-plus" class="btn btn-danger" type="button">+</button>    
+                        </div>
+                    
+                        <span id="o-total" class="cart-price cart-column">$0</span>
+                        <span id="o-pv" class="cart-price2 cart-column">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--J014-->
+            <div class="cart-items">
+                <div class="cart-row2">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                        <span class="cart-item-title">joli青春元素- F</span>
+                    </div>
+                    
+                    <span class="cart-price cart-column">$1995</span>
+                    <span class="cart-price2 cart-column">1700</span>
+                </div>
+            </div>
+            
+
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-quantity cart-column">
+                        <button id="p-minus" class="btn btn-danger2" type="button">-</button> 
+                        <input id="p-number" type="text" min="0" class="cart-quantity-input" value="0" readonly>
+                        <button id="p-plus" class="btn btn-danger" type="button">+</button>    
+                    </div>
+                
+                    <span id="p-total" class="cart-price cart-column">$0</span>
+                    <span id="p-pv" class="cart-price2 cart-column">0</span>
+                </div>
+            </div>
+
+            <!--J015-->
+            <div class="bb">
+                <div class="cart-items">
+                    <div class="cart-row2">
+                        <div class="cart-item cart-column">
+                            <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                            <span class="cart-item-title">joli青春元素- L</span>
+                        </div>
+                    
+                        <span class="cart-price cart-column">$1995</span>
+                        <span class="cart-price2 cart-column">1700</span>
+                    </div>
+                </div>
+
+            
+                <div class="cart-items">
+                    <div class="cart-row">
+                        <div class="cart-quantity cart-column">
+                            <button id="q-minus" class="btn btn-danger2" type="button">-</button> 
+                            <input id="q-number" type="text" min="0" class="cart-quantity-input" value="0" readonly>
+                            <button id="q-plus" class="btn btn-danger" type="button">+</button>    
+                        </div>
+                    
+                        <span id="q-total" class="cart-price cart-column">$0</span>
+                        <span id="q-pv" class="cart-price2 cart-column">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--J021-->
+            <div class="cart-items">
+                <div class="cart-row2">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                        <span class="cart-item-title">纖麗 365</span>
+                    </div>
+                    
+                    <span class="cart-price cart-column">$2625</span>
+                    <span class="cart-price2 cart-column">2300</span>
+                </div>
+            </div>
+            
+
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-quantity cart-column">
+                        <button id="r-minus" class="btn btn-danger2" type="button">-</button> 
+                        <input id="r-number" type="text" min="0" class="cart-quantity-input" value="0" readonly>
+                        <button id="r-plus" class="btn btn-danger" type="button">+</button>    
+                    </div>
+                
+                    <span id="r-total" class="cart-price cart-column">$0</span>
+                    <span id="r-pv" class="cart-price2 cart-column">0</span>
+                </div>
+            </div>
+
+            <!--J024-->
+            <div class="bb">
+                <div class="cart-items">
+                    <div class="cart-row2">
+                        <div class="cart-item cart-column">
+                            <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                            <span class="cart-item-title">纖麗365 酵素S1</span>
+                        </div>
+                    
+                        <span class="cart-price cart-column">$2625</span>
+                        <span class="cart-price2 cart-column">2300</span>
+                    </div>
+                </div>
+
+            
+                <div class="cart-items">
+                    <div class="cart-row">
+                        <div class="cart-quantity cart-column">
+                            <button id="s-minus" class="btn btn-danger2" type="button">-</button> 
+                            <input id="s-number" type="text" min="0" class="cart-quantity-input" value="0" readonly>
+                            <button id="s-plus" class="btn btn-danger" type="button">+</button>    
+                        </div>
+                    
+                        <span id="s-total" class="cart-price cart-column">$0</span>
+                        <span id="s-pv" class="cart-price2 cart-column">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--J022-->
+            <div class="cart-items">
+                <div class="cart-row2">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                        <span class="cart-item-title">麗瑞頂級橄欖油</span>
+                    </div>
+                    
+                    <span class="cart-price cart-column">$3210</span>
+                    <span class="cart-price2 cart-column">2400</span>
+                </div>
+            </div>
+            
+
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-quantity cart-column">
+                        <button id="t-minus" class="btn btn-danger2" type="button">-</button> 
+                        <input id="t-number" type="text" min="0" class="cart-quantity-input" value="0" readonly>
+                        <button id="t-plus" class="btn btn-danger" type="button">+</button>    
+                    </div>
+                
+                    <span id="t-total" class="cart-price cart-column">$0</span>
+                    <span id="t-pv" class="cart-price2 cart-column">0</span>
+                </div>
+            </div>
+
+            <!--J023-->
+            <div class="bb">
+                <div class="cart-items">
+                    <div class="cart-row2">
+                        <div class="cart-item cart-column">
+                            <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                            <span class="cart-item-title">天麗紅蔘精華飲</span>
+                        </div>
+                    
+                        <span class="cart-price cart-column">$3210</span>
+                        <span class="cart-price2 cart-column">2400</span>
+                    </div>
+                </div>
+
+            
+                <div class="cart-items">
+                    <div class="cart-row">
+                        <div class="cart-quantity cart-column">
+                            <button id="u-minus" class="btn btn-danger2" type="button">-</button> 
+                            <input id="u-number" type="text" min="0" class="cart-quantity-input" value="0" readonly>
+                            <button id="u-plus" class="btn btn-danger" type="button">+</button>    
+                        </div>
+                    
+                        <span id="u-total" class="cart-price cart-column">$0</span>
+                        <span id="u-pv" class="cart-price2 cart-column">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--J025-->
+            <div class="cart-items">
+                <div class="cart-row2">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                        <span class="cart-item-title">麗穩 康 奶粉</span>
+                    </div>
+                    
+                    <span class="cart-price cart-column">$3210</span>
+                    <span class="cart-price2 cart-column">2200</span>
+                </div>
+            </div>
+            
+
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-quantity cart-column">
+                        <button id="v-minus" class="btn btn-danger2" type="button">-</button> 
+                        <input id="v-number" type="text" min="0" class="cart-quantity-input" value="0" readonly>
+                        <button id="v-plus" class="btn btn-danger" type="button">+</button>    
+                    </div>
+                
+                    <span id="v-total" class="cart-price cart-column">$0</span>
+                    <span id="v-pv" class="cart-price2 cart-column">0</span>
+                </div>
+            </div>
+
+            <!--J026-->
+            <div class="bb">
+                <div class="cart-items">
+                    <div class="cart-row2">
+                        <div class="cart-item cart-column">
+                            <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                            <span class="cart-item-title">麗穩 膳 奶粉</span>
+                        </div>
+                    
+                        <span class="cart-price cart-column">$3210</span>
+                        <span class="cart-price2 cart-column">2200</span>
+                    </div>
+                </div>
+
+            
+                <div class="cart-items">
+                    <div class="cart-row">
+                        <div class="cart-quantity cart-column">
+                            <button id="w-minus" class="btn btn-danger2" type="button">-</button> 
+                            <input id="w-number" type="text" min="0" class="cart-quantity-input" value="0" readonly>
+                            <button id="w-plus" class="btn btn-danger" type="button">+</button>    
+                        </div>
+                    
+                        <span id="w-total" class="cart-price cart-column">$0</span>
+                        <span id="w-pv" class="cart-price2 cart-column">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--入會費-->
+            <div class="cart-items">
+                <div class="cart-row2">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                        <span class="cart-item-title">入會費</span>
+                    </div>
+                    
+                    <span class="cart-price cart-column">$1000</span>
+                    <span class="cart-price2 cart-column">0</span>
+                </div>
+            </div>
+            
+
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-quantity cart-column">
+                        <button id="x-minus" class="btn btn-danger2" type="button">-</button> 
+                        <input id="x-number" type="text" min="0" class="cart-quantity-input" value="0" readonly>
+                        <button id="x-plus" class="btn btn-danger" type="button">+</button>    
+                    </div>
+                
+                    <span id="x-total" class="cart-price cart-column">$0</span>
+                    <span id="x-pv" class="cart-price2 cart-column">0</span>
+                </div>
+            </div>
+
+            <!--footer-->
+            <div class="cart-total">
+                <strong class="cart-total-title">總計數量:</strong>
+                <span id="productQuantity" class="cart-total-price">0</span>
+
+                <strong class="cart-total-title">金額:</strong>
+                <span id="sub-total" class="cart-total-price">$0</span>
+
+                <strong class="cart-total-title">PV:</strong>
+                <span id="pv-total" class="cart-total-price">0</span>
+            </div>
+            
+                
+            <button id = 'confirm' class="btn2 btn-primary btn-purchase" type="button">確認</button>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+body{
+	margin:0;
+	padding:5px;
+	font-family: sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table td,.table th{
+  padding:9px 11px;
+  border:1px solid #ddd;
+  text-align: center;
+  font-size:10px;
+}
+
+.table th{
+	background-color: #D4A373;
+	color:#ffffff;
+}
+
+.table tbody tr:nth-child(even){
+	background-color: #f5f5f5;
+}
+
+/*responsive*/
+
+@media(max-width: 300px){
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 100%;
+	}
+	.table tr{
+		margin-bottom:10px;
+	}
+	.table td{
+		text-align: right;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:15px;
+		font-weight: bold;
+		text-align: left;
+	}
+}
+.btn2 {
+    text-align: center;
+    vertical-align: middle;
+    padding: .50em .70em;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #D4A373;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 30px auto 40px auto;
+    font-size: 0.8em;
+}
+
+.positive-value {
+	background-color: #D4A373;
+}
+
+
+
+
+

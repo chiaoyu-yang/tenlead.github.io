@@ -1,0 +1,493 @@
+<!-- responsive-table.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Table</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css"/>
+  <script src="responsive-table.js" async></script>
+  <style>
+   .positive-value {
+     background-color:rgb(226, 226, 226);
+   }
+ </style>
+</head>
+<body>
+   <table class="table">
+     <thead>
+      <tr>
+       <th>產品名稱</th>
+       <th>代號</th>
+       <th>售價</th>
+       <th>PV值</th>
+       <th>數量</th>
+       <th>金額</th>
+       <th>PV值</th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>深層潔膚油</td>
+       <td>A1</td>
+       <td>1995</td>
+       <td>1700</td>
+       <td id="a_number"></td>
+       <td id="a_total"></td>
+       <td id="a_pv"></td>
+      </tr>
+
+      <tr>
+         <td>雙效潔顏露</td>
+         <td>01</td>
+         <td>1995</td>
+         <td>1700</td>
+         <td id="b_number"></td>
+         <td id="b_total"></td>
+         <td id="b_pv"></td>
+      </tr>
+
+      <tr>
+         <td>平衡柔膚露</td>
+         <td>02</td>
+         <td>1995</td>
+         <td>1700</td>
+         <td id="c_number"></td>
+         <td id="c_total"></td>
+         <td id="c_pv"></td>
+        </tr>
+  
+        <tr>
+           <td>全效緊緻眼霜</td>
+           <td>03</td>
+           <td>3990</td>
+           <td>3500</td>
+           <td id="d_number"></td>
+           <td id="d_total"></td>
+           <td id="d_pv"></td>
+        </tr>
+
+        <tr>
+         <td>煥白晶華霜</td>
+         <td>04</td>
+         <td>4200</td>
+         <td>3600</td>
+         <td id="e_number"></td>
+         <td id="e_total"></td>
+         <td id="e_pv"></td>
+        </tr>
+  
+        <tr>
+           <td>均衡調理霜</td>
+           <td>05</td>
+           <td>4200</td>
+           <td>3600</td>
+           <td id="f_number"></td>
+           <td id="f_total"></td>
+           <td id="f_pv"></td>
+        </tr>
+
+        <tr>
+         <td>亮白防護霜</td>
+         <td>6A</td>
+         <td>3990</td>
+         <td>3500</td>
+         <td id="g_number"></td>
+         <td id="g_total"></td>
+         <td id="g_pv"></td>
+        </tr>
+  
+        <tr>
+           <td>潤白防護霜</td>
+           <td>6B</td>
+           <td>3990</td>
+           <td>3500</td>
+           <td id="h_number"></td>
+           <td id="h_total"></td>
+           <td id="h_pv"></td>
+        </tr>
+
+        <tr>
+         <td>賦活菁華霜</td>
+         <td>08</td>
+         <td>3990</td>
+         <td>3500</td>
+         <td id="i_number"></td>
+         <td id="i_total"></td>
+         <td id="i_pv"></td>
+        </tr>
+  
+        <tr>
+           <td>保濕修護霜</td>
+           <td>09</td>
+           <td>2415</td>
+           <td>1800</td>
+           <td id="j_number"></td>
+           <td id="j_total"></td>
+           <td id="j_pv"></td>
+        </tr>
+
+        <tr>
+         <td>瞬效亮麗精純液</td>
+         <td>10</td>
+         <td>3465</td>
+         <td>3000</td>
+         <td id="k_number"></td>
+         <td id="k_total"></td>
+         <td id="k_pv"></td>
+        </tr>
+  
+        <tr>
+           <td>煥彩青春露</td>
+           <td>12</td>
+           <td>2415</td>
+           <td>1800</td>
+           <td id="l_number"></td>
+           <td id="l_total"></td>
+           <td id="l_pv"></td>
+        </tr>
+
+        <tr>
+         <td>Bio 雪肌面膜</td>
+         <td></td>
+         <td>2415</td>
+         <td>1800</td>
+         <td id="m_number"></td>
+         <td id="m_total"></td>
+         <td id="m_pv"></td>
+        </tr>
+  
+        <tr>
+           <td>嫩白C粉 10g</td>
+           <td></td>
+           <td>3465</td>
+           <td>3000</td>
+           <td id="n_number"></td>
+           <td id="n_total"></td>
+           <td id="n_pv"></td>
+        </tr>
+
+        <tr>
+         <td>嫩白C粉 100g</td>
+         <td></td>
+         <td>29400</td>
+         <td>26000</td>
+         <td id="o_number"></td>
+         <td id="o_total"></td>
+         <td id="o_pv"></td>
+        </tr>
+  
+        <tr>
+           <td>joli青春元素- F</td>
+           <td></td>
+           <td>1995</td>
+           <td>1700</td>
+           <td id="p_number"></td>
+           <td id="p_total"></td>
+           <td id="p_pv"></td>
+        </tr>
+
+        <tr>
+         <td>joli青春元素- L</td>
+         <td></td>
+         <td>1995</td>
+         <td>1700</td>
+         <td id="q_number"></td>
+         <td id="q_total"></td>
+         <td id="q_pv"></td>
+        </tr>
+  
+        <tr>
+           <td>纖麗 365</td>
+           <td></td>
+           <td>2625</td>
+           <td>2300</td>
+           <td id="r_number"></td>
+           <td id="r_total"></td>
+           <td id="r_pv"></td>
+        </tr>
+
+        <tr>
+         <td>纖麗365 酵素S1</td>
+         <td></td>
+         <td>2625</td>
+         <td>2300</td>
+         <td id="s_number"></td>
+         <td id="s_total"></td>
+         <td id="s_pv"></td>
+        </tr>
+  
+        <tr>
+           <td>麗瑞頂級橄欖油</td>
+           <td></td>
+           <td>3210</td>
+           <td>2400</td>
+           <td id="t_number"></td>
+           <td id="t_total"></td>
+           <td id="t_pv"></td>
+        </tr>
+
+        <tr>
+         <td>天麗紅蔘精華飲</td>
+         <td></td>
+         <td>3210</td>
+         <td>2400</td>
+         <td id="u_number"></td>
+         <td id="u_total"></td>
+         <td id="u_pv"></td>
+        </tr>
+  
+        <tr>
+           <td>麗穩 康 奶粉</td>
+           <td></td>
+           <td>3210</td>
+           <td>2200</td>
+           <td id="v_number"></td>
+           <td id="v_total"></td>
+           <td id="v_pv"></td>
+        </tr>
+
+        <tr>
+         <td>麗穩 膳 奶粉</td>
+         <td></td>
+         <td>3210</td>
+         <td>2200</td>
+         <td id="w_number"></td>
+         <td id="w_total"></td>
+         <td id="w_pv"></td>
+      </tr>
+
+      <tr>
+         <td>入會費</td>
+         <td></td>
+         <td>1000</td>
+         <td>0</td>
+         <td id="x_number"></td>
+         <td id="x_total"></td>
+         <td id="x_pv"></td>
+      </tr>
+
+      <tr>
+         <td colspan="4">總計</td>
+         <td id="productQuantity"></td>
+         <td id="sub_total"></td>
+         <td id="pv_total"></td>
+      </tr>
+      
+     </tbody>
+   </table>
+
+   <button id = 'back-btn' class="btn2 btn-primary btn-purchase" type="button">返回</button>
+
+   <script>
+      window.onload = function() {
+
+         const a_number = sessionStorage.getItem('a_number');
+         const a_total = sessionStorage.getItem('a_total');
+         const a_pv = sessionStorage.getItem('a_pv');
+         document.getElementById('a_number').innerText = a_number;
+         document.getElementById('a_total').innerText = a_total;
+         document.getElementById('a_pv').innerText = a_pv;
+
+         const b_number = sessionStorage.getItem('b_number');
+         const b_total = sessionStorage.getItem('b_total');
+         const b_pv = sessionStorage.getItem('b_pv');
+         document.getElementById('b_number').innerText = b_number;
+         document.getElementById('b_total').innerText = b_total;
+         document.getElementById('b_pv').innerText = b_pv;
+
+         const c_number = sessionStorage.getItem('c_number');
+         const c_total = sessionStorage.getItem('c_total');
+         const c_pv = sessionStorage.getItem('c_pv');
+         document.getElementById('c_number').innerText = c_number;
+         document.getElementById('c_total').innerText = c_total;
+         document.getElementById('c_pv').innerText = c_pv;
+
+         const d_number = sessionStorage.getItem('d_number');
+         const d_total = sessionStorage.getItem('d_total');
+         const d_pv = sessionStorage.getItem('d_pv');
+         document.getElementById('d_number').innerText = d_number;
+         document.getElementById('d_total').innerText = d_total;
+         document.getElementById('d_pv').innerText = d_pv;
+
+         const e_number = sessionStorage.getItem('e_number');
+         const e_total = sessionStorage.getItem('e_total');
+         const e_pv = sessionStorage.getItem('e_pv');
+         document.getElementById('e_number').innerText = e_number;
+         document.getElementById('e_total').innerText = e_total;
+         document.getElementById('e_pv').innerText = e_pv;
+
+         const f_number = sessionStorage.getItem('f_number');
+         const f_total = sessionStorage.getItem('f_total');
+         const f_pv = sessionStorage.getItem('f_pv');
+         document.getElementById('f_number').innerText = f_number;
+         document.getElementById('f_total').innerText = f_total;
+         document.getElementById('f_pv').innerText = f_pv;
+
+         const g_number = sessionStorage.getItem('g_number');
+         const g_total = sessionStorage.getItem('g_total');
+         const g_pv = sessionStorage.getItem('g_pv');
+         document.getElementById('g_number').innerText = g_number;
+         document.getElementById('g_total').innerText = g_total;
+         document.getElementById('g_pv').innerText = g_pv;
+
+         const h_number = sessionStorage.getItem('h_number');
+         const h_total = sessionStorage.getItem('h_total');
+         const h_pv = sessionStorage.getItem('h_pv');
+         document.getElementById('h_number').innerText = h_number;
+         document.getElementById('h_total').innerText = h_total;
+         document.getElementById('h_pv').innerText = h_pv;
+
+         const i_number = sessionStorage.getItem('i_number');
+         const i_total = sessionStorage.getItem('i_total');
+         const i_pv = sessionStorage.getItem('i_pv');
+         document.getElementById('i_number').innerText = i_number;
+         document.getElementById('i_total').innerText = i_total;
+         document.getElementById('i_pv').innerText = i_pv;
+
+         const j_number = sessionStorage.getItem('j_number');
+         const j_total = sessionStorage.getItem('j_total');
+         const j_pv = sessionStorage.getItem('j_pv');
+         document.getElementById('j_number').innerText = j_number;
+         document.getElementById('j_total').innerText = j_total;
+         document.getElementById('j_pv').innerText = j_pv;
+
+         const k_number = sessionStorage.getItem('k_number');
+         const k_total = sessionStorage.getItem('k_total');
+         const k_pv = sessionStorage.getItem('k_pv');
+         document.getElementById('k_number').innerText = k_number;
+         document.getElementById('k_total').innerText = k_total;
+         document.getElementById('k_pv').innerText = k_pv;
+
+         const l_number = sessionStorage.getItem('l_number');
+         const l_total = sessionStorage.getItem('l_total');
+         const l_pv = sessionStorage.getItem('l_pv');
+         document.getElementById('l_number').innerText = l_number;
+         document.getElementById('l_total').innerText = l_total;
+         document.getElementById('l_pv').innerText = l_pv;
+
+         const m_number = sessionStorage.getItem('m_number');
+         const m_total = sessionStorage.getItem('m_total');
+         const m_pv = sessionStorage.getItem('m_pv');
+         document.getElementById('m_number').innerText = m_number;
+         document.getElementById('m_total').innerText = m_total;
+         document.getElementById('m_pv').innerText = m_pv;
+
+         const n_number = sessionStorage.getItem('n_number');
+         const n_total = sessionStorage.getItem('n_total');
+         const n_pv = sessionStorage.getItem('n_pv');
+         document.getElementById('n_number').innerText = n_number;
+         document.getElementById('n_total').innerText = n_total;
+         document.getElementById('n_pv').innerText = n_pv;
+
+         const o_number = sessionStorage.getItem('o_number');
+         const o_total = sessionStorage.getItem('o_total');
+         const o_pv = sessionStorage.getItem('o_pv');
+         document.getElementById('o_number').innerText = o_number;
+         document.getElementById('o_total').innerText = o_total;
+         document.getElementById('o_pv').innerText = o_pv;
+
+         const p_number = sessionStorage.getItem('p_number');
+         const p_total = sessionStorage.getItem('p_total');
+         const p_pv = sessionStorage.getItem('p_pv');
+         document.getElementById('p_number').innerText = p_number;
+         document.getElementById('p_total').innerText = p_total;
+         document.getElementById('p_pv').innerText = p_pv;
+
+         const q_number = sessionStorage.getItem('q_number');
+         const q_total = sessionStorage.getItem('q_total');
+         const q_pv = sessionStorage.getItem('q_pv');
+         document.getElementById('q_number').innerText = q_number;
+         document.getElementById('q_total').innerText = q_total;
+         document.getElementById('q_pv').innerText = q_pv;
+
+         const r_number = sessionStorage.getItem('r_number');
+         const r_total = sessionStorage.getItem('r_total');
+         const r_pv = sessionStorage.getItem('r_pv');
+         document.getElementById('r_number').innerText = r_number;
+         document.getElementById('r_total').innerText = r_total;
+         document.getElementById('r_pv').innerText = r_pv;
+
+         const s_number = sessionStorage.getItem('s_number');
+         const s_total = sessionStorage.getItem('s_total');
+         const s_pv = sessionStorage.getItem('s_pv');
+         document.getElementById('s_number').innerText = s_number;
+         document.getElementById('s_total').innerText = s_total;
+         document.getElementById('s_pv').innerText = s_pv;
+
+         const t_number = sessionStorage.getItem('t_number');
+         const t_total = sessionStorage.getItem('t_total');
+         const t_pv = sessionStorage.getItem('t_pv');
+         document.getElementById('t_number').innerText = t_number;
+         document.getElementById('t_total').innerText = t_total;
+         document.getElementById('t_pv').innerText = t_pv;
+
+         const u_number = sessionStorage.getItem('u_number');
+         const u_total = sessionStorage.getItem('u_total');
+         const u_pv = sessionStorage.getItem('u_pv');
+         document.getElementById('u_number').innerText = u_number;
+         document.getElementById('u_total').innerText = u_total;
+         document.getElementById('u_pv').innerText = u_pv;
+
+         const v_number = sessionStorage.getItem('v_number');
+         const v_total = sessionStorage.getItem('v_total');
+         const v_pv = sessionStorage.getItem('v_pv');
+         document.getElementById('v_number').innerText = v_number;
+         document.getElementById('v_total').innerText = v_total;
+         document.getElementById('v_pv').innerText = v_pv;
+
+         const w_number = sessionStorage.getItem('w_number');
+         const w_total = sessionStorage.getItem('w_total');
+         const w_pv = sessionStorage.getItem('w_pv');
+         document.getElementById('w_number').innerText = w_number;
+         document.getElementById('w_total').innerText = w_total;
+         document.getElementById('w_pv').innerText = w_pv;
+
+         const x_number = sessionStorage.getItem('x_number');
+         const x_total = sessionStorage.getItem('x_total');
+         const x_pv = sessionStorage.getItem('x_pv');
+         document.getElementById('x_number').innerText = x_number;
+         document.getElementById('x_total').innerText = x_total;
+         document.getElementById('x_pv').innerText = x_pv;
+
+         const productQuantity = sessionStorage.getItem('productQuantity');
+         const sub_total = sessionStorage.getItem('sub_total');
+         const pv_total = sessionStorage.getItem('pv_total');
+         document.getElementById('productQuantity').innerText = productQuantity;
+         document.getElementById('sub_total').innerText = sub_total;
+         document.getElementById('pv_total').innerText = pv_total;
+
+         
+      }
+   </script>
+   <script>
+      window.onload = function() {
+         const productCodes = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x'];
+         productCodes.forEach(code => {
+            const number = sessionStorage.getItem(`${code}_number`);
+            const total = sessionStorage.getItem(`${code}_total`);
+            const pv = sessionStorage.getItem(`${code}_pv`);
+            const numberElement = document.getElementById(`${code}_number`);
+            const totalElement = document.getElementById(`${code}_total`);
+            const pvElement = document.getElementById(`${code}_pv`);
+            numberElement.innerText = number;
+            totalElement.innerText = total;
+            pvElement.innerText = pv;
+            if (parseInt(number) > 0) {
+               numberElement.classList.add('positive-value');
+            }
+         });
+
+         const productQuantity = sessionStorage.getItem('productQuantity');
+         const sub_total = sessionStorage.getItem('sub_total');
+         const pv_total = sessionStorage.getItem('pv_total');
+         document.getElementById('productQuantity').innerText = productQuantity;
+         document.getElementById('sub_total').innerText = sub_total;
+         document.getElementById('pv_total').innerText = pv_total;
+      }
+   </script>
+
+   
+   
+</body>
+</html>
