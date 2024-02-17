@@ -456,9 +456,9 @@ function sendDataToNextPage() {
     const m_number = parseInt(document.getElementById('m-number').value);
     const m_total = document.getElementById('m-total').textContent;
     const m_pv = document.getElementById('m-pv').textContent;
-    sessionStorage.setItem('m_number', a_number);
-    sessionStorage.setItem('m_total', a_total);
-    sessionStorage.setItem('m_pv', a_pv);
+    sessionStorage.setItem('m_number', m_number);
+    sessionStorage.setItem('m_total', m_total);
+    sessionStorage.setItem('m_pv', m_pv);
 
     const n_number = parseInt(document.getElementById('n-number').value);
     const n_total = document.getElementById('n-total').textContent;
