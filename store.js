@@ -304,11 +304,11 @@ document.getElementById('d-minus').addEventListener('click',function(){
  
  document.getElementById('v-plus').addEventListener('click',function(){
     upadateCaseNumber('v', 3210 ,true);
-    upadatePV('a', 2200 ,true);
+    upadatePV('v', 2200 ,true);
  });
  document.getElementById('v-minus').addEventListener('click',function(){
      upadateCaseNumber('v', 3210, false);
-     upadatePV('a', 2200 ,false);
+     upadatePV('v', 2200 ,false);
  });
  
  document.getElementById('w-plus').addEventListener('click',function(){
