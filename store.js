@@ -38,6 +38,11 @@ function upadateCaseNumber(product, price, isIncreasing){
     function getInputvalue(product){
         const productInput = document.getElementById(product + '-number');
         const productNumber = parseInt(productInput.value);
+        if (productNumber > 0) {
+            productInput.classList.add('red-text');
+        } else {
+            productInput.classList.remove('red-text');
+        }
         return productNumber;
     }
 

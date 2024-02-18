@@ -111,7 +111,7 @@ html, body {
 .btn2 {
     text-align: center;
     vertical-align: middle;
-    padding: .50em .70em;
+    padding: .90em .99em;
     cursor: pointer;
 }
 
@@ -230,6 +230,7 @@ html, body {
     background-color: #D4A373;
 }
 
+
 .cart-quantity-input {
     height: 50px;
     width: 50px;
@@ -292,6 +293,11 @@ html, body {
 .btn-purchase {
     font-weight: bold;
     display: block;
-    margin: 40px auto 80px auto;
+    margin: 60px auto 100px auto;
     font-size: 2.5em;
 }
+
+.red-text {
+    color: red;
+    font-weight: bold;
+  }
