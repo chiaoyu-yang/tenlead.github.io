@@ -198,11 +198,11 @@ document.getElementById('d-minus').addEventListener('click',function(){
  });
  
  document.getElementById('k-plus').addEventListener('click',function(){
-     upadateCaseNumber('k',2465, true);
+     upadateCaseNumber('k',3465, true);
      upadatePV('k', 3000 ,true);
  });
  document.getElementById('k-minus').addEventListener('click',function(){
-     upadateCaseNumber('k',2465 , false);
+     upadateCaseNumber('k',3465 , false);
      upadatePV('k', 3000 ,false);
  });
 
