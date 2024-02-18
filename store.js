@@ -49,7 +49,7 @@ function upadateCaseNumber(product, price, isIncreasing){
         const d = getInputvalue('d') * 3990;
         const e = getInputvalue('e') * 4200;
         const f = getInputvalue('f') * 4200;
-        const g = getInputvalue('g') * 4200;
+        const g = getInputvalue('g') * 3990;
         const h = getInputvalue('h') * 3990;
         const i = getInputvalue('i') * 3990;
         const j = getInputvalue('j') * 2415;
