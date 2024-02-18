@@ -193,7 +193,7 @@ html, body {
 .cart-item-title {
     color: #333;
     margin-left: .5em;
-    font-size: 1.0em;
+    font-size: 1.1em;
 }
 
 .cart-item-image {
@@ -208,7 +208,7 @@ html, body {
     border: none;
     border-radius: 50%;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 55px;
 }
 
 .btn-danger:hover {
@@ -222,7 +222,7 @@ html, body {
     border-radius: 50%;
     font-weight: bold;
     margin-right: 50px;
-    font-size: 50px;
+    font-size: 55px;
     margin-left: 10px;
 }
 
@@ -239,7 +239,7 @@ html, body {
     color: #333;
     padding: 0;
     text-align: center;
-    font-size: 2.0em;
+    font-size: 2.5em;
     margin-right: 50px;
 }
 
@@ -283,12 +283,14 @@ html, body {
 }
 
 .cart-total-price {
+    font-weight: bold;
     color: #333;
     font-size: 2.5em;
     margin-right: 10px;
 }
 
 .btn-purchase {
+    font-weight: bold;
     display: block;
     margin: 40px auto 80px auto;
     font-size: 2.5em;
