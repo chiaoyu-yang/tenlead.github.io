@@ -72,7 +72,34 @@ function upadateCaseNumber(product, price, isIncreasing){
         const v = getInputvalue('v') * 3210;
         const w = getInputvalue('w') * 3210;
         const x = getInputvalue('x') * 1000;
+
+        
         const subTotal = a + ab + c + d + e + f + g + h + i +j + k + l + m + n + o + p + q + r + s + t + u + v + w + x;
+
+        document.getElementById('a-total').innerText = "$" + a;
+        document.getElementById('b-total').innerText = "$" + ab;
+        document.getElementById('c-total').innerText = "$" + c;
+        document.getElementById('d-total').innerText = "$" + d;
+        document.getElementById('e-total').innerText = "$" + e;
+        document.getElementById('f-total').innerText = "$" + f;
+        document.getElementById('g-total').innerText = "$" + g;
+        document.getElementById('h-total').innerText = "$" + h;
+        document.getElementById('i-total').innerText = "$" + i;
+        document.getElementById('j-total').innerText = "$" + j;
+        document.getElementById('k-total').innerText = "$" + k;
+        document.getElementById('l-total').innerText = "$" + l;
+        document.getElementById('m-total').innerText = "$" + m;
+        document.getElementById('n-total').innerText = "$" + n;
+        document.getElementById('o-total').innerText = "$" + o;
+        document.getElementById('p-total').innerText = "$" + p;
+        document.getElementById('q-total').innerText = "$" + q;
+        document.getElementById('r-total').innerText = "$" + r;
+        document.getElementById('s-total').innerText = "$" + s;
+        document.getElementById('t-total').innerText = "$" + t;
+        document.getElementById('u-total').innerText = "$" + u;
+        document.getElementById('v-total').innerText = "$" + v;
+        document.getElementById('w-total').innerText = "$" + w;
+        document.getElementById('x-total').innerText = "$" + x;
 
         // update on the html 
         document.getElementById('sub-total').innerText = "$" + subTotal;
@@ -105,6 +132,31 @@ function upadateCaseNumber(product, price, isIncreasing){
         const x = getInputvalue('x') * 0;
         const pvTotal = a + ab + c + d + e + f + g + h + i +j + k + l + m + n + o + p + q + r + s + t + u + v + w + x;
 
+        document.getElementById('a-pv').innerText = "$" + a;
+        document.getElementById('b-pv').innerText = "$" + ab;
+        document.getElementById('c-pv').innerText = "$" + c;
+        document.getElementById('d-pv').innerText = "$" + d;
+        document.getElementById('e-pv').innerText = "$" + e;
+        document.getElementById('f-pv').innerText = "$" + f;
+        document.getElementById('g-pv').innerText = "$" + g;
+        document.getElementById('h-pv').innerText = "$" + h;
+        document.getElementById('i-pv').innerText = "$" + i;
+        document.getElementById('j-pv').innerText = "$" + j;
+        document.getElementById('k-pv').innerText = "$" + k;
+        document.getElementById('l-pv').innerText = "$" + l;
+        document.getElementById('m-pv').innerText = "$" + m;
+        document.getElementById('n-pv').innerText = "$" + n;
+        document.getElementById('o-pv').innerText = "$" + o;
+        document.getElementById('p-pv').innerText = "$" + p;
+        document.getElementById('q-pv').innerText = "$" + q;
+        document.getElementById('r-pv').innerText = "$" + r;
+        document.getElementById('s-pv').innerText = "$" + s;
+        document.getElementById('t-pv').innerText = "$" + t;
+        document.getElementById('u-pv').innerText = "$" + u;
+        document.getElementById('v-pv').innerText = "$" + v;
+        document.getElementById('w-pv').innerText = "$" + w;
+        document.getElementById('x-pv').innerText = "$" + x;
+
         // update on the html 
         document.getElementById('pv-total').innerText = pvTotal;
     }
@@ -113,6 +165,7 @@ document.getElementById('a-plus').addEventListener('click',function(){
    upadateCaseNumber('a', 1995 ,true);
    upadatePV('a', 1700 ,true);
 });
+
 document.getElementById('a-minus').addEventListener('click',function(){
     upadateCaseNumber('a', 1995, false);
     upadatePV('a', 1700 ,false);
@@ -338,6 +391,152 @@ document.getElementById('d-minus').addEventListener('click',function(){
  document.getElementById('confirm').addEventListener('click',function(){
     sendDataToNextPage()
 });
+
+document.getElementById("a-number").addEventListener("input", function() {
+    calculateTotal();
+    calculateTotal2();
+    updateTotalQuantity();
+}); 
+
+document.getElementById("b-number").addEventListener("input", function() {
+    calculateTotal();
+    calculateTotal2();
+    updateTotalQuantity();
+});
+
+document.getElementById("c-number").addEventListener("input", function() {
+    calculateTotal();
+    calculateTotal2();
+    updateTotalQuantity();
+});
+
+document.getElementById("d-number").addEventListener("input", function() {
+    calculateTotal();
+    calculateTotal2();
+    updateTotalQuantity();
+});
+
+document.getElementById("e-number").addEventListener("input", function() {
+    calculateTotal();
+    calculateTotal2();
+    updateTotalQuantity();
+});
+
+document.getElementById("f-number").addEventListener("input", function() {
+    calculateTotal();
+    calculateTotal2();
+    updateTotalQuantity();
+});
+
+document.getElementById("g-number").addEventListener("input", function() {
+    calculateTotal();
+    calculateTotal2();
+    updateTotalQuantity();
+});
+
+document.getElementById("h-number").addEventListener("input", function() {
+    calculateTotal();
+    calculateTotal2();
+    updateTotalQuantity();
+});
+
+document.getElementById("i-number").addEventListener("input", function() {
+    calculateTotal();
+    calculateTotal2();
+    updateTotalQuantity();
+});
+
+document.getElementById("j-number").addEventListener("input", function() {
+    calculateTotal();
+    calculateTotal2();
+    updateTotalQuantity();
+});
+
+document.getElementById("k-number").addEventListener("input", function() {
+    calculateTotal();
+    calculateTotal2();
+    updateTotalQuantity();
+});
+
+document.getElementById("l-number").addEventListener("input", function() {
+    calculateTotal();
+    calculateTotal2();
+    updateTotalQuantity();
+});
+
+document.getElementById("m-number").addEventListener("input", function() {
+    calculateTotal();
+    calculateTotal2();
+    updateTotalQuantity();
+});
+
+document.getElementById("n-number").addEventListener("input", function() {
+    calculateTotal();
+    calculateTotal2();
+    updateTotalQuantity();
+});
+
+document.getElementById("o-number").addEventListener("input", function() {
+    calculateTotal();
+    calculateTotal2();
+    updateTotalQuantity();
+});
+
+document.getElementById("p-number").addEventListener("input", function() {
+    calculateTotal();
+    calculateTotal2();
+    updateTotalQuantity();
+});
+
+document.getElementById("q-number").addEventListener("input", function() {
+    calculateTotal();
+    calculateTotal2();
+    updateTotalQuantity();
+});
+
+document.getElementById("r-number").addEventListener("input", function() {
+    calculateTotal();
+    calculateTotal2();
+    updateTotalQuantity();
+});
+
+document.getElementById("s-number").addEventListener("input", function() {
+    calculateTotal();
+    calculateTotal2();
+    updateTotalQuantity();
+});
+
+document.getElementById("t-number").addEventListener("input", function() {
+    calculateTotal();
+    calculateTotal2();
+    updateTotalQuantity();
+});
+
+document.getElementById("u-number").addEventListener("input", function() {
+    calculateTotal();
+    calculateTotal2();
+    updateTotalQuantity();
+});
+
+document.getElementById("v-number").addEventListener("input", function() {
+    calculateTotal();
+    calculateTotal2();
+    updateTotalQuantity();
+});
+
+document.getElementById("w-number").addEventListener("input", function() {
+    calculateTotal();
+    calculateTotal2();
+    updateTotalQuantity();
+});
+
+document.getElementById("x-number").addEventListener("input", function() {
+    calculateTotal();
+    calculateTotal2();
+    updateTotalQuantity();
+});
+
+
 
 
 function updateTotalQuantity() {
