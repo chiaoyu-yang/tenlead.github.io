@@ -572,183 +572,63 @@ function updateTotalQuantity() {
 }
 
 function sendDataToNextPage() {
-    
-    const a_number = parseInt(document.getElementById('a-number').value);
-    const a_total = document.getElementById('a-total').textContent;
-    const a_pv = document.getElementById('a-pv').textContent;
-    sessionStorage.setItem('a_number', a_number);
-    sessionStorage.setItem('a_total', a_total);
-    sessionStorage.setItem('a_pv', a_pv);
+    const items = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x'];
 
-    const b_number = parseInt(document.getElementById('b-number').value);
-    const b_total = document.getElementById('b-total').textContent;
-    const b_pv = document.getElementById('b-pv').textContent;
-    sessionStorage.setItem('b_number', b_number);
-    sessionStorage.setItem('b_total', b_total);
-    sessionStorage.setItem('b_pv', b_pv);
-
-    const c_number = parseInt(document.getElementById('c-number').value);
-    const c_total = document.getElementById('c-total').textContent;
-    const c_pv = document.getElementById('c-pv').textContent;
-    sessionStorage.setItem('c_number', c_number);
-    sessionStorage.setItem('c_total', c_total);
-    sessionStorage.setItem('c_pv', c_pv);
-
-    const d_number = parseInt(document.getElementById('d-number').value);
-    const d_total = document.getElementById('d-total').textContent;
-    const d_pv = document.getElementById('d-pv').textContent;
-    sessionStorage.setItem('d_number', d_number);
-    sessionStorage.setItem('d_total', d_total);
-    sessionStorage.setItem('d_pv', d_pv);
-
-    const e_number = parseInt(document.getElementById('e-number').value);
-    const e_total = document.getElementById('e-total').textContent;
-    const e_pv = document.getElementById('e-pv').textContent;
-    sessionStorage.setItem('e_number', e_number);
-    sessionStorage.setItem('e_total', e_total);
-    sessionStorage.setItem('e_pv', e_pv);
-
-    const f_number = parseInt(document.getElementById('f-number').value);
-    const f_total = document.getElementById('f-total').textContent;
-    const f_pv = document.getElementById('f-pv').textContent;
-    sessionStorage.setItem('f_number', f_number);
-    sessionStorage.setItem('f_total', f_total);
-    sessionStorage.setItem('f_pv', f_pv);
-
-    const g_number = parseInt(document.getElementById('g-number').value);
-    const g_total = document.getElementById('g-total').textContent;
-    const g_pv = document.getElementById('g-pv').textContent;
-    sessionStorage.setItem('g_number', g_number);
-    sessionStorage.setItem('g_total', g_total);
-    sessionStorage.setItem('g_pv', g_pv);
-
-    const h_number = parseInt(document.getElementById('h-number').value);
-    const h_total = document.getElementById('h-total').textContent;
-    const h_pv = document.getElementById('h-pv').textContent;
-    sessionStorage.setItem('h_number', h_number);
-    sessionStorage.setItem('h_total', h_total);
-    sessionStorage.setItem('h_pv', h_pv);
-
-    const i_number = parseInt(document.getElementById('i-number').value);
-    const i_total = document.getElementById('i-total').textContent;
-    const i_pv = document.getElementById('i-pv').textContent;
-    sessionStorage.setItem('i_number', i_number);
-    sessionStorage.setItem('i_total', i_total);
-    sessionStorage.setItem('i_pv', i_pv);
-
-    const j_number = parseInt(document.getElementById('j-number').value);
-    const j_total = document.getElementById('j-total').textContent;
-    const j_pv = document.getElementById('j-pv').textContent;
-    sessionStorage.setItem('j_number', j_number);
-    sessionStorage.setItem('j_total', j_total);
-    sessionStorage.setItem('j_pv', j_pv);
-
-    const k_number = parseInt(document.getElementById('k-number').value);
-    const k_total = document.getElementById('k-total').textContent;
-    const k_pv = document.getElementById('k-pv').textContent;
-    sessionStorage.setItem('k_number', k_number);
-    sessionStorage.setItem('k_total', k_total);
-    sessionStorage.setItem('k_pv', k_pv);
-
-    const l_number = parseInt(document.getElementById('l-number').value);
-    const l_total = document.getElementById('l-total').textContent;
-    const l_pv = document.getElementById('l-pv').textContent;
-    sessionStorage.setItem('l_number', l_number);
-    sessionStorage.setItem('l_total', l_total);
-    sessionStorage.setItem('l_pv', l_pv);
-
-    const m_number = parseInt(document.getElementById('m-number').value);
-    const m_total = document.getElementById('m-total').textContent;
-    const m_pv = document.getElementById('m-pv').textContent;
-    sessionStorage.setItem('m_number', m_number);
-    sessionStorage.setItem('m_total', m_total);
-    sessionStorage.setItem('m_pv', m_pv);
-
-    const n_number = parseInt(document.getElementById('n-number').value);
-    const n_total = document.getElementById('n-total').textContent;
-    const n_pv = document.getElementById('n-pv').textContent;
-    sessionStorage.setItem('n_number', n_number);
-    sessionStorage.setItem('n_total', n_total);
-    sessionStorage.setItem('n_pv', n_pv);
-
-    const o_number = parseInt(document.getElementById('o-number').value);
-    const o_total = document.getElementById('o-total').textContent;
-    const o_pv = document.getElementById('o-pv').textContent;
-    sessionStorage.setItem('o_number', o_number);
-    sessionStorage.setItem('o_total', o_total);
-    sessionStorage.setItem('o_pv', o_pv);
-
-    const p_number = parseInt(document.getElementById('p-number').value);
-    const p_total = document.getElementById('p-total').textContent;
-    const p_pv = document.getElementById('p-pv').textContent;
-    sessionStorage.setItem('p_number', p_number);
-    sessionStorage.setItem('p_total', p_total);
-    sessionStorage.setItem('p_pv', p_pv);
-
-    const q_number = parseInt(document.getElementById('q-number').value);
-    const q_total = document.getElementById('q-total').textContent;
-    const q_pv = document.getElementById('q-pv').textContent;
-    sessionStorage.setItem('q_number', q_number);
-    sessionStorage.setItem('q_total', q_total);
-    sessionStorage.setItem('q_pv', q_pv);
-
-    const r_number = parseInt(document.getElementById('r-number').value);
-    const r_total = document.getElementById('r-total').textContent;
-    const r_pv = document.getElementById('r-pv').textContent;
-    sessionStorage.setItem('r_number', r_number);
-    sessionStorage.setItem('r_total', r_total);
-    sessionStorage.setItem('r_pv', r_pv);
-
-    const s_number = parseInt(document.getElementById('s-number').value);
-    const s_total = document.getElementById('s-total').textContent;
-    const s_pv = document.getElementById('s-pv').textContent;
-    sessionStorage.setItem('s_number', s_number);
-    sessionStorage.setItem('s_total', s_total);
-    sessionStorage.setItem('s_pv', s_pv);
-
-    const t_number = parseInt(document.getElementById('t-number').value);
-    const t_total = document.getElementById('t-total').textContent;
-    const t_pv = document.getElementById('t-pv').textContent;
-    sessionStorage.setItem('t_number', t_number);
-    sessionStorage.setItem('t_total', t_total);
-    sessionStorage.setItem('t_pv', t_pv);
-
-    const u_number = parseInt(document.getElementById('u-number').value);
-    const u_total = document.getElementById('u-total').textContent;
-    const u_pv = document.getElementById('u-pv').textContent;
-    sessionStorage.setItem('u_number', u_number);
-    sessionStorage.setItem('u_total', u_total);
-    sessionStorage.setItem('u_pv', u_pv);
-
-    const v_number = parseInt(document.getElementById('v-number').value);
-    const v_total = document.getElementById('v-total').textContent;
-    const v_pv = document.getElementById('v-pv').textContent;
-    sessionStorage.setItem('v_number', v_number);
-    sessionStorage.setItem('v_total', v_total);
-    sessionStorage.setItem('v_pv', v_pv);
-
-    const w_number = parseInt(document.getElementById('w-number').value);
-    const w_total = document.getElementById('w-total').textContent;
-    const w_pv = document.getElementById('w-pv').textContent;
-    sessionStorage.setItem('w_number', w_number);
-    sessionStorage.setItem('w_total', w_total);
-    sessionStorage.setItem('w_pv', w_pv);
-
-    const x_number = parseInt(document.getElementById('x-number').value);
-    const x_total = document.getElementById('x-total').textContent;
-    const x_pv = document.getElementById('x-pv').textContent;
-    sessionStorage.setItem('x_number', x_number);
-    sessionStorage.setItem('x_total', x_total);
-    sessionStorage.setItem('x_pv', x_pv);
+    items.forEach(item => {
+        const number = parseInt(document.getElementById(`${item}-number`).value);
+        const total = document.getElementById(`${item}-total`).textContent;
+        const pv = document.getElementById(`${item}-pv`).textContent;
+        sessionStorage.setItem(`${item}_number`, number);
+        sessionStorage.setItem(`${item}_total`, total);
+        sessionStorage.setItem(`${item}_pv`, pv);
+    });
 
     const productQuantity = document.getElementById('productQuantity').textContent;
-    const sub_total = document.getElementById('sub-total').textContent;
-    const pv_total = document.getElementById('pv-total').textContent;
+    const subTotal = document.getElementById('sub-total').textContent;
+    const pvTotal = document.getElementById('pv-total').textContent;
     sessionStorage.setItem('productQuantity', productQuantity);
-    sessionStorage.setItem('sub_total', sub_total);
-    sessionStorage.setItem('pv_total', pv_total);
+    sessionStorage.setItem('sub_total', subTotal);
+    sessionStorage.setItem('pv_total', pvTotal);
     
     // 重定向到 responsive-table.html 頁面
     window.location.href = 'responsive-table.html';
 }
 
+window.onload = function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const returnParam = urlParams.get('return');
+
+    // Only populate fields if returning from another page
+    if (returnParam === 'true') {
+        populateFieldsFromSessionStorage();
+    }
+};
+
+function populateFieldsFromSessionStorage() {
+    const items = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x'];
+
+    items.forEach(item => {
+        const number = sessionStorage.getItem(`${item}_number`);
+        const total = sessionStorage.getItem(`${item}_total`);
+        const pv = sessionStorage.getItem(`${item}_pv`);
+        const numberElement = document.getElementById(`${item}-number`);
+        const totalElement = document.getElementById(`${item}-total`);
+        const pvElement = document.getElementById(`${item}-pv`);
+
+        numberElement.value = number;
+        totalElement.textContent = total;
+        pvElement.textContent = pv;
+
+        // 检查 `${item}-number` 是否大于 0，如果是则添加 'red-text' 类
+        if (parseInt(number) > 0) {
+            numberElement.classList.add('red-text');
+        }
+    });
+
+    const productQuantity = sessionStorage.getItem('productQuantity');
+    const subTotal = sessionStorage.getItem('sub_total');
+    const pvTotal = sessionStorage.getItem('pv_total');
+    document.getElementById('productQuantity').textContent = productQuantity;
+    document.getElementById('sub-total').textContent = subTotal;
+    document.getElementById('pv-total').textContent = pvTotal;
+}
