@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SNDY7H4WQT"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-SNDY7H4WQT');
+        </script>
         <title>The Generics | Store</title>
         <meta name="description" content="This is the description">
         <meta charset="UTF-8">
@@ -671,7 +680,6 @@
                 </div>
             </div>
             
-
             <div class="cart-items">
                 <div class="cart-row">
                     <div class="cart-quantity cart-column">
@@ -682,6 +690,35 @@
                 
                     <span id="x-total" class="cart-price cart-column">$0</span>
                     <span id="x-pv" class="cart-price2 cart-column">0</span>
+                </div>
+            </div>
+
+            <!--續約費-->
+            <div class="bb">
+                <div class="cart-items">
+                    <div class="cart-row2">
+                        <div class="cart-item cart-column">
+                            <span class="cart-item-title">   </span>
+                            <span class="cart-item-title">續約費</span>
+                        </div>
+                    
+                        <span class="cart-price cart-column">$500</span>
+                        <span class="cart-price2 cart-column">0</span>
+                    </div>
+                </div>
+
+            
+                <div class="cart-items">
+                    <div class="cart-row">
+                        <div class="cart-quantity cart-column">
+                            <button id="y-minus" class="btn btn-danger2" type="button">-</button> 
+                            <input id="y-number" type="text" min="0" class="cart-quantity-input" value="0">
+                            <button id="y-plus" class="btn btn-danger" type="button">+</button>    
+                        </div>
+                    
+                        <span id="y-total" class="cart-price cart-column">$0</span>
+                        <span id="y-pv" class="cart-price2 cart-column">0</span>
+                    </div>
                 </div>
             </div>
 

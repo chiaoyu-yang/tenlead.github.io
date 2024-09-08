@@ -72,9 +72,10 @@ function upadateCaseNumber(product, price, isIncreasing){
         const v = getInputvalue('v') * 3210;
         const w = getInputvalue('w') * 3210;
         const x = getInputvalue('x') * 1000;
+        const y = getInputvalue('y') * 500;
 
         
-        const subTotal = a + ab + c + d + e + f + g + h + i +j + k + l + m + n + o + p + q + r + s + t + u + v + w + x;
+        const subTotal = a + ab + c + d + e + f + g + h + i +j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y;
 
         document.getElementById('a-total').innerText = "$" + a;
         document.getElementById('b-total').innerText = "$" + ab;
@@ -100,6 +101,7 @@ function upadateCaseNumber(product, price, isIncreasing){
         document.getElementById('v-total').innerText = "$" + v;
         document.getElementById('w-total').innerText = "$" + w;
         document.getElementById('x-total').innerText = "$" + x;
+        document.getElementById('y-total').innerText = "$" + y;
 
         // update on the html 
         document.getElementById('sub-total').innerText = "$" + subTotal;
@@ -130,7 +132,8 @@ function upadateCaseNumber(product, price, isIncreasing){
         const v = getInputvalue('v') * 2200;
         const w = getInputvalue('w') * 2200;
         const x = getInputvalue('x') * 0;
-        const pvTotal = a + ab + c + d + e + f + g + h + i +j + k + l + m + n + o + p + q + r + s + t + u + v + w + x;
+        const y = getInputvalue('y') * 0;
+        const pvTotal = a + ab + c + d + e + f + g + h + i +j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y;
 
         document.getElementById('a-pv').innerText = "$" + a;
         document.getElementById('b-pv').innerText = "$" + ab;
@@ -156,6 +159,7 @@ function upadateCaseNumber(product, price, isIncreasing){
         document.getElementById('v-pv').innerText = "$" + v;
         document.getElementById('w-pv').innerText = "$" + w;
         document.getElementById('x-pv').innerText = "$" + x;
+        document.getElementById('y-pv').innerText = "$" + y;
 
         // update on the html 
         document.getElementById('pv-total').innerText = pvTotal;
@@ -388,6 +392,15 @@ document.getElementById('d-minus').addEventListener('click',function(){
      upadatePV('x', 0 ,false);
  });
 
+ document.getElementById('y-plus').addEventListener('click',function(){
+    upadateCaseNumber('y', 500 ,true);
+    upadatePV('y', 0 ,true);
+ });
+ document.getElementById('y-minus').addEventListener('click',function(){
+     upadateCaseNumber('y', 500, false);
+     upadatePV('y', 0 ,false);
+ });
+
  document.getElementById('confirm').addEventListener('click',function(){
     sendDataToNextPage()
 });
@@ -536,8 +549,11 @@ document.getElementById("x-number").addEventListener("input", function() {
     updateTotalQuantity();
 });
 
-
-
+document.getElementById("y-number").addEventListener("input", function() {
+    calculateTotal();
+    calculateTotal2();
+    updateTotalQuantity();
+});
 
 function updateTotalQuantity() {
     const a_number = parseInt(document.getElementById('a-number').value);
@@ -564,15 +580,16 @@ function updateTotalQuantity() {
     const v_number = parseInt(document.getElementById('v-number').value);
     const w_number = parseInt(document.getElementById('w-number').value);
     const x_number = parseInt(document.getElementById('x-number').value);
+    const y_number = parseInt(document.getElementById('y-number').value);
     const productQuantity = a_number + b_number + c_number + d_number + e_number + f_number + g_number + h_number + i_number + j_number + k_number + l_number + m_number + n_number + o_number + p_number + q_number + r_number + s_number + t_number +
-    u_number + v_number + w_number + x_number;
+    u_number + v_number + w_number + x_number + y_number;
     
     // 更新總計數量
     document.getElementById('productQuantity').textContent = productQuantity;
 }
 
 function sendDataToNextPage() {
-    const items = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x'];
+    const items = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y'];
 
     items.forEach(item => {
         const number = parseInt(document.getElementById(`${item}-number`).value);
@@ -605,7 +622,7 @@ window.onload = function() {
 };
 
 function populateFieldsFromSessionStorage() {
-    const items = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x'];
+    const items = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y'];
 
     items.forEach(item => {
         const number = sessionStorage.getItem(`${item}_number`);

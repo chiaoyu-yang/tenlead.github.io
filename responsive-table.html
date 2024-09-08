@@ -2,6 +2,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SNDY7H4WQT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SNDY7H4WQT');
+</script>
   <title>Responsive Table</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
@@ -59,19 +68,19 @@
          <td id="c_number"></td>
          <td id="c_total"></td>
          <td id="c_pv"></td>
-        </tr>
+      </tr>
   
-        <tr id="d_row">
-           <td>全效緊緻眼霜</td>
-           <td>03</td>
-           <td>3990</td>
-           <td>3500</td>
-           <td id="d_number"></td>
-           <td id="d_total"></td>
-           <td id="d_pv"></td>
-        </tr>
+      <tr id="d_row">
+         <td>全效緊緻眼霜</td>
+         <td>03</td>
+         <td>3990</td>
+         <td>3500</td>
+         <td id="d_number"></td>
+         <td id="d_total"></td>
+         <td id="d_pv"></td>
+      </tr>
 
-        <tr id="e_row">
+      <tr id="e_row">
          <td>煥白晶華霜</td>
          <td>04</td>
          <td>4200</td>
@@ -79,7 +88,7 @@
          <td id="e_number"></td>
          <td id="e_total"></td>
          <td id="e_pv"></td>
-        </tr>
+      </tr>
   
         <tr id="f_row">
            <td>均衡調理霜</td>
@@ -251,7 +260,7 @@
            <td id="v_pv"></td>
         </tr>
 
-        <tr id="w_row">
+      <tr id="w_row">
          <td>麗穩 膳 奶粉</td>
          <td></td>
          <td>3210</td>
@@ -271,6 +280,16 @@
          <td id="x_pv"></td>
       </tr>
 
+      <tr id="y_row">
+         <td>續約費</td>
+         <td></td>
+         <td>500</td>
+         <td>0</td>
+         <td id="y_number"></td>
+         <td id="y_total"></td>
+         <td id="y_pv"></td>
+      </tr>
+      
       <tr class = "positive-value2">
          <td colspan="4"><strong>總計</strong></td>
          <td><strong id="productQuantity"></strong></td>
@@ -455,6 +474,13 @@
          document.getElementById('x_total').innerText = x_total;
          document.getElementById('x_pv').innerText = x_pv;
 
+         const y_number = sessionStorage.getItem('y_number');
+         const y_total = sessionStorage.getItem('y_total');
+         const y_pv = sessionStorage.getItem('y_pv');
+         document.getElementById('y_number').innerText = y_number;
+         document.getElementById('y_total').innerText = y_total;
+         document.getElementById('y_pv').innerText = y_pv;
+
          const productQuantity = sessionStorage.getItem('productQuantity');
          const sub_total = sessionStorage.getItem('sub_total');
          const pv_total = sessionStorage.getItem('pv_total');
@@ -467,7 +493,7 @@
    </script>
    <script>
       window.onload = function() {
-         const productCodes = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x'];
+         const productCodes = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y'];
          productCodes.forEach(code => {
             const number = sessionStorage.getItem(`${code}_number`);
             const total = sessionStorage.getItem(`${code}_total`);
