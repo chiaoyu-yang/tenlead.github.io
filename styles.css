@@ -262,20 +262,20 @@ html, body {
     margin-top: 10px;
     margin-right: 10px;
     position: fixed;
-    bottom: 20px; /* 調整底部間距 */
-    right: 10px;  /* 將元素置於右邊 */
-    background-color: #fff; /* 背景顏色 */
-    padding: 10px; /* 內邊距 */
-    border: 1px solid #ccc; /* 邊框 */
-    border-radius: 5px; /* 圓角 */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 陰影 */
-    z-index: 999; /* 確保元素位於其他內容上方 */
-    font-size: 1rem; /* 統一基準，避免 em 疊乘 */
+    bottom: 20px;
+    right: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    font-size: 1rem; /* 固定基準，不再放大 */
 }
 
 .cart-total-title {
     font-weight: bold;
-    font-size: 1.6rem; /* 固定放大，不會受父層影響 */
+    font-size: 3rem;  /* = reload 後的大小 */
     color: black;
     margin-right: 10px;
 }
@@ -283,9 +283,10 @@ html, body {
 .cart-total-price {
     font-weight: bold;
     color: #333;
-    font-size: 1.6rem; /* 固定放大，不會受父層影響 */
+    font-size: 3rem;  /* = reload 後的大小 */
     margin-right: 10px;
 }
+
 
 .btn-purchase {
     font-weight: bold;
