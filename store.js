@@ -632,13 +632,16 @@ function populateFieldsFromSessionStorage() {
         const totalElement = document.getElementById(`${item}-total`);
         const pvElement = document.getElementById(`${item}-pv`);
 
-        numberElement.value = number;
-        totalElement.textContent = total;
-        pvElement.textContent = pv;
+        // 保證不會寫 null
+        numberElement.value = number ?? "";
+        totalElement.textContent = total ?? "";
+        pvElement.textContent = pv ?? "";
 
-        // 检查 `${item}-number` 是否大于 0，如果是则添加 'red-text' 类
+        // ✅ 只變紅，不改大小
         if (parseInt(number) > 0) {
             numberElement.classList.add('red-text');
+        } else {
+            numberElement.classList.remove('red-text'); // 避免 reload 多次 class 疊加
         }
     });
 
